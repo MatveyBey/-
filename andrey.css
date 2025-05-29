@@ -1,0 +1,71 @@
+/* Базовые стили тела страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стиль заголовков первого уровня */
+h1 {
+    color: #ff7b54;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Оформление ссылок */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #FF4D4D;
+    text-decoration: underline;
+}
+
+/* Карточка товара */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-title {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.product-price {
+    color: green;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.product-button {
+    background-color: #ff7b54;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.product-button:hover {
+    background-color: #ff4d4d;
+}
