@@ -1,71 +1,74 @@
-/* Базовые стили тела страницы */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+/* Общие стили */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Стиль заголовков первого уровня */
-h1 {
-    color: #ff7b54;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fafd;
+    color: #0b3c76;
+    line-height: 1.6;
 }
 
-/* Оформление ссылок */
-a {
-    color: #007BFF;
+/* Шапка */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header h1 {
+    font-size: 2em;
+    color: #0b3c76;
+}
+
+.site-header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.site-header nav li a {
     text-decoration: none;
+    color: #0b3c76;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease-in-out;
 }
 
-a:hover {
-    color: #FF4D4D;
-    text-decoration: underline;
-}
-
-/* Карточка товара */
-.product-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin-bottom: 20px;
-    width: 300px;
-}
-
-.product-image {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.product-title {
-    font-weight: bold;
-    margin: 10px;
-}
-
-.product-price {
-    color: green;
-    font-size: 1.2rem;
-    margin-left: 10px;
-}
-
-.product-button {
-    background-color: #ff7b54;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
+.site-header nav li a:hover {
+    background-color: rgba(11, 60, 118, 0.1);
     border-radius: 5px;
-    margin: 10px;
 }
 
-.product-button:hover {
-    background-color: #ff4d4d;
+/* Основной контент */
+#about,
+#flavors {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.flavor-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Футер */
+.site-footer {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #0b3c76;
 }
